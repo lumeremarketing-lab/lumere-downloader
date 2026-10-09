@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Lumere Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="22" height="22">
+    <h1>Lumere Downloader</h1>
+    <button id="openTools" class="tools-btn" title="Conversores de imagem, PDF, vídeo e QR Code">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+      Ferramentas
+    </button>
+  </header>
+
+  <a id="updateBar" class="update-bar" hidden target="_blank"></a>
+
+  <form id="linkForm" class="linkbar">
+    <input id="linkInput" type="url" placeholder="Cole um link (YouTube, post do Instagram, Vimeo…)" autocomplete="off">
+    <button type="submit" class="go">Buscar</button>
+  </form>
+
+  <main>
+    <section id="jobsSection" hidden>
+      <div class="section-title">
+        <span>Downloads</span>
+        <button id="clearJobs" class="link-btn">Limpar concluídos</button>
+      </div>
+      <div id="jobs"></div>
+    </section>
+
+    <section id="helperSection" hidden>
+      <div id="helperResults"></div>
+    </section>
+
+    <section>
+      <div id="list"><p class="empty">Procurando vídeos…</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="helperStatus" class="helper-status">Verificando ajudante…</span>
+    <span class="spacer"></span>
+    <button id="helperAction" class="link-btn" hidden></button>
+  </footer>
+
+  <script src="m3u8.js"></script>
+  <script src="dash.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

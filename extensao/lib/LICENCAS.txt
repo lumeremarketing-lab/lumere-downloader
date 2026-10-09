@@ -1,0 +1,8 @@
+Bibliotecas de código aberto usadas nesta extensão:
+- mux.js (Apache-2.0) - conversão .ts para MP4
+- PDF.js / pdfjs-dist (Apache-2.0) - leitura de PDF
+- pdf-lib (MIT) - criação e edição de PDF
+- JSZip (MIT) - arquivos .zip
+- UPNG.js (MIT) + pako (MIT) - compressão de PNG
+- qrcode-generator (MIT) - QR Code
+- heic-to / libheif (LGPL-3.0) - fotos HEIC do iPhone

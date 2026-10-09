@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Lumere Downloader",
+  "version": "2.2.0",
+  "description": "Baixa vídeos (MP4, HLS, DASH, YouTube, Instagram) sem limites e traz conversores de imagem, PDF, vídeo e QR Code que rodam no seu computador.",
+  "permissions": [
+    "webRequest",
+    "declarativeNetRequestWithHostAccess",
+    "downloads",
+    "storage",
+    "tabs",
+    "scripting",
+    "offscreen",
+    "nativeMessaging",
+    "cookies",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lumere Downloader",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqj1hQ/izyMZ1e2jOSkjDhZMtnDpIt/Kg5jOyReh195voJPNBRZsdSb5b+gfdtz1Y5G2f8q53BGrP3T4aatF1xahsX2DnyFqcnCXa2Ffj84MryAe+Hzs4AcwC8eBUuZHhwpq7AgiaOy14URWaM0F5CMBzEcZ05+P1cULIXtrdfakNaDmE7udKm/k/g6ptA6liBW+VlPgVC1jx15OQ2eDSvyvROBTHHFwjdfhpx7wnV7j4vzu8VjJUWQtjqEbbeId0AJb1+aoI33YiDeoAMXs+XIokFsufyPDwMxzyBsfbRKZJOLlPbVoYcZ7ljQspVx5N2WF5gq+V0cBm9JFp9kp04wIDAQAB",
+  "side_panel": {
+    "default_path": "ferramentas.html?painel=1"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "homepage_url": "https://github.com/lumeremarketing-lab/lumere-downloader"
+}

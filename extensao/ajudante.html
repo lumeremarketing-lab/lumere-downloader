@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Instalar o ajudante · Lumere Downloader</title>
+  <link rel="stylesheet" href="ajudante.css">
+</head>
+<body>
+  <main>
+    <div class="head">
+      <img src="icons/icon48.png" alt="" width="40" height="40">
+      <div>
+        <div class="label">Lumere Downloader</div>
+        <h1>Instalar o ajudante do Windows</h1>
+      </div>
+    </div>
+
+    <p>O ajudante é um programinha que a extensão usa para baixar vídeos do <b>YouTube</b>, buscar vídeos por <b>link</b>, carregar <b>posts e carrosséis do Instagram</b>, juntar áudio e vídeo em um MP4 só e rodar as <b>ferramentas de vídeo e áudio</b>. Ele usa o <a href="https://github.com/yt-dlp/yt-dlp" target="_blank">yt-dlp</a>, que é open source e funciona em mais de 1.000 sites.</p>
+
+    <div id="status" class="status">Verificando…</div>
+
+    <h2>Como instalar (uma vez só)</h2>
+    <ol>
+      <li>Abra a pasta <b>ajudante-windows</b> que veio junto no zip.</li>
+      <li>Dê dois cliques em <b>instalar.bat</b>. Se o Windows mostrar "O Windows protegeu o computador", clique em <i>Mais informações → Executar assim mesmo</i>.</li>
+      <li>Espere aparecer <b>"Pronto! O ajudante foi instalado."</b> (ele baixa uns 170 MB: yt-dlp, gallery-dl, ffmpeg e Deno).</li>
+      <li>Volte aqui e clique em <button id="check">Verificar de novo</button></li>
+    </ol>
+
+    <h2>Dúvidas comuns</h2>
+    <ul>
+      <li><b>Onde ele fica?</b> Em <code>%LOCALAPPDATA%\MeuVideoDownloader</code>. Não precisa ser administrador.</li>
+      <li><b>O YouTube parou de baixar?</b> O YouTube muda com frequência. Clique em <i>Atualizar yt-dlp</i> no rodapé do popup.</li>
+      <li><b>Onde ficam os vídeos?</b> Na sua pasta <b>Downloads</b>.</li>
+      <li><b>Atualizar o ajudante?</b> Rode o <b>instalar.bat</b> de novo: ele atualiza o yt-dlp e o gallery-dl e mantém o resto.</li>
+      <li><b>Como remover?</b> Dois cliques em <b>desinstalar.bat</b>.</li>
+    </ul>
+  </main>
+  <script src="ajudante.js"></script>
+</body>
+</html>

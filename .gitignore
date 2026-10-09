@@ -1,0 +1,9 @@
+# Arquivos do sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Pacotes gerados
+*.zip
+*.crx
+*.pem
